@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Subjects
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">graphics</a></li>
+                    <li><a class="dropdown-item" href="#">devepment</a></li>
+                    <li><a class="dropdown-item" href="#">coding</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">bootstrap</a></li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Courses
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">React</a></li>
+                            <li><a class="dropdown-item" href="#">Php</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">By Bootstrap</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav sm-icons">
+                    <li><a class="nav-link" href="https//www.facebook.com"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="nav-link" href="https//www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li><a class="nav-link" href="https//www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="nav-link" href="https//www.linkedin.com"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/education.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/study.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/student.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/education.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- card -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="images/study.jpg" class="img-fluid rounded-start mt-5" alt="...">
+            </div>
+            <div class="col-md-6">
+                <h4 class="card-title fw-900 mt-5">ABOUT US</h4>
+                <h5 class="card-sub-title">Innovative Way To Learn</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.Learning is the process of acquiring new
+                    understanding, knowledge, behaviors, skills, values, attitudes, and preferences.The ability to
+                    learn is possessed by humans, non-human animals, and some machines</p>
+                <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                <a href="" #>
+                    <button type="button" class="btn btn-success">Learn More</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Subjects -->
+    <h4 class="center text-center fw-bold mt-5">SUBJECTS</h4>
+    <h5 class="text-center fw-bold fs-3 mb-5">Explore Top Subjects</h5>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/education.jpg" class="card-img mt-5" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Web design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/coffee.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Development</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/game-design.webp" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Game design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/digital-marketing.webp" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Apps design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/research.avif" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Web design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/Content_Writer.avif" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Development</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/seo.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Game design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card bg-dark text-white">
+                    <img src="images/study.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Apps design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- courses -->
+    <div class="courses">
+        <h4 class="center text-center fw-bold mt-5">COURSES</h4>
+        <h5 class="text-center fw-bold fs-3">Our Popular Courses</h5>
+
+        <div class="gallery">
+            <div class="content">
+                <img src="images/book.jpg" alt="book">
+                <h3>Web design & Development </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis inventore, libero quam
+                    asperiores
+                </p>
+                <h6> $99.00</h6>
+                <ul>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+
+            </div>
+
+            <div class="content">
+                <img src="images/coffee.jpg" alt="coffee">
+                <h3>Web development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis inventore, libero quam
+                    asperiores
+                </p>
+                <h6> $40.00</h6>
+                <ul>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <img src="images/study.jpg" alt="book">
+                <h3>Testing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis inventore, libero quam
+                    asperiores.
+                </p>
+                <h6> $1000.00</h6>
+                <ul>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+
+            </div>
+
+            <div class="content">
+                <img src="images/think.jpg" alt="">
+                <i class='fas fa-users fs-0 fw-100'></i>
+
+                <h3>Graphics</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae debitis inventore, libero quam
+                    asperiores
+                </p>
+                <h6> $10.00</h6>
+                <ul>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star checked"></i></li>
+                    <li><i class="fas fa-star"></i></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <!-- teachers -->
+    <div class="teachers">
+        <h4 class="center text-center fw-bold fs-3">TEACHERS</h4>
+        <h5 class="text-center fw-bold fs-3">Meet Our Teachers</h5>
+
+        <div class="gallery">
+            <div class="content">
+                <img src="images/Laura-DeMarco.jpg" alt="book">
+                <h3>Laura DeMarco </h3>
+                <p>Web design & Development
+                </p>
+            </div>
+
+            <div class="content">
+                <img src="images/headshot (1).aspx" alt="coffee">
+                <h3>Nikolas Bowie </h3>
+                <p>Web Development </p>
+            </div>
+
+            <div class="content">
+                <img src="images/headshot.aspx" alt="book">
+                <h3> Marc Harris </h3>
+                <p>Graphics
+                </p>
+            </div>
+
+            <div class="content">
+                <img src="images/jbigic5ra8iw0gzhlgsw.webp" alt="">
+                <h3>GStephanie Burt</h3>
+                <p>Quality mgmt
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- students -->
+    <div class="student-say">
+        <h4 class=" center text-center fw-bold mt-5">TESTIMONIAL</h4>
+        <h5 class="text-center fw-bold fs-2">What Say Our Students</h5>
+        <p class="text-center">Canva is the world's easiest design tool. And the best part? It's free. Whether it's a
+            poster or study guide,
+            you can create beautiful designs for your classroom in seconds. No design experience needed.</p>
+        <img src="images/images.jpg" class="center" alt="images">
+        <p class="text-center">Laura DeMarco</p>
+        <p class="text-center">Professor</p>
+    </div>
+
+
+    <!-- blog -->
+    <div class="container py-3">
+        <h4 class="center text-center fw-bold mt-5">OUR BLOG</h4>
+        <h5 class="text-center fw-bold fs-2 mb-5">Latest From Our Blog</h5>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card bg-white text-white">
+                    <img src="images/student.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Apps design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-white text-white">
+                    <img src="images/study.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Apps design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-white text-white">
+                    <img src="images/coffee.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <h5 class="card-title">Apps design</h5>
+                        <p class="card-text">100 courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- parallax -->
+    <div class="parallax">
+        <div class="container pt-5">
+            <form class="login-form">
+                <h2 class="bg-white fw-bold py-3">Sign Up Now</h2>
+
+                <div class="input my-3 mx-3">
+                    <input type="text" id="username" name="username" placeholder="Your Name" required>
+                </div>
+                <div class="input my-3 mx-3">
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="input my-3 mx-3">
+                    <select id="course" name="courses">
+                        <option value="course" selected disabled>Select a Course</option>
+                        <optgroup label="CSIT">
+                        <option value="graphics">Graphics</option>
+                        <option value="devops">web development</option>
+
+                    </optgroup>
+
+                        <optgroup label="Cars">
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                        </optgroup>
+                    </select><br>
+                </div>
+                <button type="button" class="btn btn-primary mb-5 mx-3">Sign Up Now</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>GET IN TOUCH</h3>
+                <i class="fas fa-map-marker-alt">123 street,Npj, NEPAL</i>
+                <a href="#" <i class="fas fa-phone"></i>+977 9814555880</a>
+                <i class="fas fa-envelope">info@example.com</i>
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col">
+                <h3>OUR COURSES</h3>
+                <p>web Design</p>
+                <p>Apps Design</p>
+                <p>Marketing</p>
+                <p>Research</p>
+                <p>SEO</p>
+
+            </div>
+            <div class="col">
+                <h3>NEWSLETTER</h3>
+                <P>A newsletter is a printed or electronic report containing news concerning the activities of a
+                    business or an organization that is sent to its members, customers, employees or other subscribers.
+                </P>
+                <form>
+                    <div class="box">
+                        <!-- <i class="fas fa-envelope"></i> -->
+                        <input type="text" placeholder="Enter your email">
+                        <a href="">
+                            <button type="button" class="btn btn-warning">Sign Up</button>
+                        </a>
+                    </div>
+                </form>
+            </div>
+            <hr>
+            <p class="copyright">&copy; All Rights Reserved by Durga Khanal</p>
+
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
